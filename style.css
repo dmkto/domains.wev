@@ -1,0 +1,112 @@
+body {
+  padding: 0.5vw;
+  background: url("/asset/waves-macos.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:#fff5f5;
+  font-family: 'Archivo', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  transform: translate(-50%, -50%);
+}
+.main {
+  border-radius: 25px;
+  padding: 2.2rem;
+  margin: 0.2rem;
+  background: rgba(255, 255, 255, 0.19);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: 0.5s;
+}
+.invitation {
+  border-radius: 12px;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.19);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: 0.5s;
+  display: flex;
+}
+.invitation:hover {
+  scale: 1.1;
+  transition: 0.2s;
+}
+.invitation:active {
+  scale: 0.9;
+  transition: 0.1s;
+  opacity: 0.5;
+}
+
+.custom-btn {
+  width: 70%;
+  padding: 0.5rem;
+  color: #fff;
+  border-radius: 12px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.btn-11 {
+  border: none;
+  background: rgb(153, 193, 241);
+    background: linear-gradient(0deg, rgba(153,193,241,1) 0%, rgba(154,190,230,1) 100%);
+    color: #fff;
+    overflow: hidden;
+}
+.btn-11:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.btn-11:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+}
+.btn-11:hover{
+  opacity: .7;
+}
+.btn-11:active{
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+@-webkit-keyframes shiny-btn1 {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
